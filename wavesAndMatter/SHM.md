@@ -1,4 +1,4 @@
-##Ball on a spring
+## Ball on a spring
 
 At the end of each oscillation there is 0KE and the potential energy is E = 1/2(kA<sup>2</sup>)
 
@@ -23,7 +23,7 @@ angular velocity = f . 2&pi;
 
 &omega; = sqrt(k/m)
 
-####Position:
+#### Position:
 
 X = Acos(&omega;)t
 
