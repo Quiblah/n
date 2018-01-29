@@ -14,5 +14,6 @@ Acceleration projection &alpha;<sub>x</sub> = -&omega;<sup>2</sup>Acos&theta;
 x = Acos&theta;
 
 &omega; = sqrt(k/m)
+&omega; = sqrt(k/m)
 
 
