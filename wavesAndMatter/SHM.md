@@ -1,17 +1,38 @@
-#TEST TEST TEST
-##Hooke's law
-k = spring constant.
+##Ball on a spring
 
-F<sub>x</sub> = -kx
+At the end of each oscillation there is 0KE and the potential energy is E = 1/2(kA<sup>2</sup>)
 
-F<sub>x</sub> = a<sub>x</sub>m
+At the middle of the oscillation there is maximum kinetic energy KE = 1/2(mv<sub>max</sub><sup>2</sup>)
 
------> a<sub>x</sub>m = -kx = d<sup>2</sup>x/dt<sup>2<sup> = -k/m . x
+From that we can get: 
 
-centripetal accelleration &alpha;<sub>Q</sub> = &omega;<sup>2</sup>A
+v<sub>max</sub>  =  +-A . sqrt(k/m)
 
-Acceleration projection &alpha;<sub>x</sub> = -&omega;<sup>2</sup>Acos&theta;
+A - amplitude
 
-x = Acos&theta;
+k - spring constant
+
+m - mass
+
+
+T = 2&pi; . sqrt(m/k)
+
+f = 1/T
+
+angular velocity = f . 2&pi;
 
 &omega; = sqrt(k/m)
+
+####Position:
+
+X = Acos(&omega;)t
+
+X - horizontal position
+
+A - amplitude
+
+&omega; - angular velocity
+
+t - time
+
+
