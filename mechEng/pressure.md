@@ -24,6 +24,6 @@ Units of pressure: Pa pascals (N/m<sup>2</sup>)
 
 ## Hydrostatic force
 
-F = pressure * area
+F = pressure at centroid * area
 
 F = &rho;gh * A<sub>base</sub>
