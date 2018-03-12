@@ -38,12 +38,12 @@ This means there must be another force.
 
 ### Summary
 
-Force | Act on | MAGNITUDE | RANGE | particle
-===|===|===|===|===
-strong |Nucleons |1 |<10<sup>-14</sup> |Gluon
-EM |Charge |10<sup>-2</sup> |inf |photon
-weak |quarks |10<sup>-5</sup> |<10<sup>-18</sup> |Boson
-gravity |Everything |10<sup>-38</sup> |inf |Graviton(?)
+|Force | Act on | MAGNITUDE | RANGE | particle|
+|===|===|===|===|===|
+|strong |Nucleons |1 |<10<sup>-14</sup> |Gluon|
+|EM |Charge |10<sup>-2</sup> |inf |photon|
+|weak |quarks |10<sup>-5</sup> |<10<sup>-18</sup> |Boson|
+|gravity |Everything |10<sup>-38</sup> |inf |Graviton(?)|
 
 
 
