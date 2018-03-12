@@ -13,6 +13,9 @@ void main(void)
 	int gd = DETECT, gm = 0;
 	initgraph(&gd, &gm, "");
 
+	const int mid_x = getmaxx() / 2;
+	const int mid_y = getmaxy() / 2;
+
 
 	//		1
 	//	4		2
@@ -20,17 +23,17 @@ void main(void)
 
 
 	//initial player 1 pos and direction
-	int p1_x = (getmaxx() / 2 + getmaxy() / 2) - 10;
-	int p1_y = getmaxy() / 2;
+	int p1_x = (mid_x + mid_y) - 10;
+	int p1_y = mid_y;
 	int p1_direction = 4;
 
 	//initial player 2 pos and direction
-	int p2_x = (getmaxx() / 2 - getmaxy() / 2) + 10;
-	int p2_y = getmaxy() / 2;
+	int p2_x = (mid_x - mid_y) + 10;
+	int p2_y = mid_y;
 	int p2_direction = 2;
 	
 	//map
-	ellipse(getmaxx() / 2, getmaxy() / 2, 0, 360, getmaxx() / 2, getmaxy() / 2);
+	ellipse(mid_x, mid_y, 0, 360, , mid_y);
 	
 	delay(1000);
 
@@ -44,31 +47,31 @@ void main(void)
 
 
 		//check for p2 direction change
-		if (keypressed(0x41) != 0) {
+		if (keypressed(0x41) != 0 && p2_direction != 2) {
 			p2_direction = 4;
 		}
-		if (keypressed(0x57) != 0) {
+		if (keypressed(0x57) != 0 && p2_direction != 3) {
 			p2_direction = 1;
 		}
-		if (keypressed(0x44) != 0) {
+		if (keypressed(0x44) != 0 && p2_direction != 4) {
 			p2_direction = 2;
 		}
-		if (keypressed(0x53) != 0) {
+		if (keypressed(0x53) != 0 && p2_direction != 1) {
 			p2_direction = 3;
 		}
 
 
 		//check for p1 direction change
-		if (keypressed(0x4A) != 0) {
+		if (keypressed(0x4A) != 0 && p1_direction != 2) {
 			p1_direction = 4;
 		}
-		if (keypressed(0x49) != 0) {
+		if (keypressed(0x49) != 0 && p1_direction != 3) {
 			p1_direction = 1;
 		}
-		if (keypressed(0x4C) != 0) {
+		if (keypressed(0x4C) != 0 && p1_direction != 4) {
 			p1_direction = 2;
 		}
-		if (keypressed(0x4B) != 0) {
+		if (keypressed(0x4B) != 0 && p1_direction != 1) {
 			p1_direction = 3;
 		}
 
@@ -123,19 +126,10 @@ void main(void)
 	delay(2000);
 	closegraph();
 	
-	switch (winner) {
-	case 1:
-		printf("RED WINS\n");
-		break;
-	case 2:
-		printf("BLUE WINS\n");
-		break;
-	case 3:
-		printf("DRAW");
-		break;
-	default:
-		printf("error no winner");
-	}
+	if(winner==1) printf("RED WINS\n");
+	if(winner==2) printf("BLUE WINS\n");
+	if(winner==3) printf("DRAW\n");
+
 	delay(2000);
 	
 
