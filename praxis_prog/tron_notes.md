@@ -41,14 +41,14 @@ If the game hasn't ended set the  coords to the next coords calculated.
 
 ## removing the tail
 
-arr_x[256]
+arr_x[256]  
 
 
-if below tail length:
-    append arr_x with current head x pos
-else:
-    remove pixel at arr_x[0]
-    for i 0 to tail length-1:
-        arr_x[i] = arr_x[i+1]
-    arr_x[tail length] = current head pos
+if below tail length:  
+    append arr_x with current head x pos  
+else:  
+    remove pixel at arr_x[0]  
+    for i 0 to tail length-1:  
+        arr_x[i] = arr_x[i+1]  
+    arr_x[tail length] = current head pos  
 
