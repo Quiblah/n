@@ -45,10 +45,10 @@ arr_x[256]
 
 
 if below tail length:  
-    append arr_x with current head x pos  
+----append arr_x with current head x pos  
 else:  
-    remove pixel at arr_x[0]  
-    for i 0 to tail length-1:  
-        arr_x[i] = arr_x[i+1]  
-    arr_x[tail length] = current head pos  
+----remove pixel at arr_x[0]  
+----for i 0 to tail length-1:  
+--------arr_x[i] = arr_x[i+1]  
+----arr_x[tail length] = current head pos  
 
