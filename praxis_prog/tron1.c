@@ -33,7 +33,7 @@ void main(void)
 	int p2_direction = 2;
 	
 	//map
-	ellipse(mid_x, mid_y, 0, 360, , mid_y);
+	ellipse(mid_x, mid_y, 0, 360, mid_x, mid_y);
 	
 	delay(1000);
 
@@ -74,6 +74,7 @@ void main(void)
 		if (keypressed(0x4B) != 0 && p1_direction != 1) {
 			p1_direction = 3;
 		}
+                */
 
 
 		//calculate p1's next pos
@@ -112,9 +113,11 @@ void main(void)
 		default:
 			printf("Error no direction");
 		}
+                
 
 
 		//check for a collision
+                
 		if (getpixel(p1_x, p1_y) != getbkcolor()) winner = 2;
 		if (getpixel(p2_x, p2_y) != getbkcolor()) winner = 1;
 		if (p1_x == p2_x && p1_y == p2_y) winner = 3;
