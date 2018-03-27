@@ -5,6 +5,7 @@
 #include <graphics.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <ncurses.h>
 
 void main(void)
 {
@@ -47,34 +48,33 @@ void main(void)
 
 
 		//check for p2 direction change
-		if (keypressed(0x41) != 0 && p2_direction != 2) {
+		if (GetAsyncKeyState(0x41) != 0 && p2_direction != 2) {
 			p2_direction = 4;
 		}
-		if (keypressed(0x57) != 0 && p2_direction != 3) {
+		if (GetAsyncKeyState(0x57) != 0 && p2_direction != 3) {
 			p2_direction = 1;
 		}
-		if (keypressed(0x44) != 0 && p2_direction != 4) {
+		if (GetAsyncKeyState(0x44) != 0 && p2_direction != 4) {
 			p2_direction = 2;
 		}
-		if (keypressed(0x53) != 0 && p2_direction != 1) {
+		if (GetAsyncKeyState(0x53) != 0 && p2_direction != 1) {
 			p2_direction = 3;
 		}
 
 
 		//check for p1 direction change
-		if (keypressed(0x4A) != 0 && p1_direction != 2) {
+		if (GetAsyncKeyState(0x4A) != 0 && p1_direction != 2) {
 			p1_direction = 4;
 		}
-		if (keypressed(0x49) != 0 && p1_direction != 3) {
+		if (GetAsyncKeyState(0x49) != 0 && p1_direction != 3) {
 			p1_direction = 1;
 		}
-		if (keypressed(0x4C) != 0 && p1_direction != 4) {
+		if (GetAsyncKeyState(0x4C) != 0 && p1_direction != 4) {
 			p1_direction = 2;
 		}
-		if (keypressed(0x4B) != 0 && p1_direction != 1) {
+		if (GetAsyncKeyState(0x4B) != 0 && p1_direction != 1) {
 			p1_direction = 3;
 		}
-                */
 
 
 		//calculate p1's next pos
